@@ -1,17 +1,18 @@
 -- file MathSpec.hs
 -- https://hspec.github.io/getting-started.html
 
-
-
-module MathSpec where
+module Main where
+--module MathSpec where
 
 import Test.Hspec
+--import Test.Hspec.QuickCheck (prop)
+--import Test.QuickCheck hiding ((.&.))
 import Code.Math
 
 
 main :: IO ()
 main = hspec $ do
-     describe "absolute" $ do
+  describe "absolute" $ do
      it "returns the original number when given a positive input" $
        absolute 1 `shouldBe` 1
 

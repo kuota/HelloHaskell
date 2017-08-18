@@ -4,7 +4,7 @@
 module Code.Math where
 
 absolute :: Int -> Int
---NG absolute = undefined
+--absolute = undefined  -- Fail!
 absolute n = if n < 0 then negate n else n   -- PASS!
 
 
